@@ -1,28 +1,24 @@
 # Sinatra HW
-
-Due 10/17/17
  
 ## Prerequisites
 
-1. Uninstall Ruby if you previously installed using RubyInstaller
+1. Install Ruby via [RailsInstaller](http://railsinstaller.org/en) *(install latest version)*
 
-2. Install Ruby via [RailsInstaller](http://railsinstaller.org/en) *(install latest version)*
-
-3. ```
+2. ```
    gem install sinatra
    ```
 
-4. ```
+3. ```
    gem install data_mapper
    ```
 
-5. ```
+4. ```
    gem install dm-sqlite-adapter
    ```
 
-## Instructions
+## Instructions - Part 1 [50 points]
 
-1. Clone this repository to your local harddrive: `git clone https://github.com/ericmichael/sinatra-hw`
+1. Clone this repository to your local harddrive
 
 2. Run server: `ruby web.rb`
 
@@ -41,13 +37,18 @@ Due 10/17/17
 
 7. After calling `save` , you should render a success template
 
+8. Deploy this onto Heroku (Your database on heroku will be blank, add some posts) (submit your link to Blackboard)
+
+
+## Instructions - Part 2 [50 points]
+
+1. Make this look nice with Bootstrap and get 50 points
    ​
+## Grading
 
-## Deploying to Github
-
-*Left as an exercise for the reader*
-
-
+1. I will go to your Heroku link and try to add a post to your blog, if it doesn't work you get a 0. If it does work you get +50 points.
+2. If it works, and you styled it with Bootstrap then you get +50 points.
+3. There are no RSpec tests for this assignment.
 
 ## Deploying to Heroku
 
@@ -87,5 +88,5 @@ Your correct `new` and `create` actions will allow you to populate the database.
 1. Create a Heroku server: `heroku create`
 2. Create a database for your server: `heroku addons:create heroku-postgresql:hobby-dev`
 3. Push the code to Heroku: `git push heroku master`
-4. I had a change of heart and preconfigured the necessary files for this to work.
-5. Verify all is working and submit your links to me.
+4. I preconfigured the necessary files for this to work.
+5. Verify all is working and submit your links (github and heroku) to me.
