@@ -24,23 +24,14 @@
 				</div>
 			</nav>
 		</header>
-		<main role="main" class="container">
-			<br><br><br>
-			<h1><%= @headline %></h1>
-			<p><%= @paragraph %></p>
-			<% @posts.each do |post| %>
-				<div class="card text-white bg-dark mb-3">
-					<div class="card-header">
-						<h2><%= post.title %></h2>
-					</div>
-					<div class="card-body">
-						<p class="card-text">
-							<p><%= post.body %></p>
-						</p>
-					</div>
-				</div>
-			<% end %>
-		</div>			
-		</main>
+		<br><br><br>
+		<form action="/create" method="post">
+			Blog Post Title:<br>
+			<input type="text" size="65" maxlength="64" name="title"">
+			<br>Blog Post Body:<br>
+			<textarea rows="4" cols="55"  name="body">Enter text here...</textarea>
+			<br>
+			<input type="submit">
+		</form>
 	</body>
 </html>

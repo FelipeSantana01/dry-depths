@@ -29,9 +29,15 @@ get '/new' do
 	erb :new
 end
 
+
 post '/create' do
 	#replace this
-	return params.to_s
+	my_post = Post.new
+	my_post.title = params[:title]
+	my_post.body = params[:body]
+	my_post.save
+	erb :LastPost
+
 end
 
 get '/' do

@@ -24,23 +24,20 @@
 				</div>
 			</nav>
 		</header>
+		<br><br><br>
 		<main role="main" class="container">
-			<br><br><br>
-			<h1><%= @headline %></h1>
-			<p><%= @paragraph %></p>
-			<% @posts.each do |post| %>
-				<div class="card text-white bg-dark mb-3">
-					<div class="card-header">
-						<h2><%= post.title %></h2>
-					</div>
-					<div class="card-body">
-						<p class="card-text">
-							<p><%= post.body %></p>
-						</p>
-					</div>
+			<h1>post created successfully</h1>
+			<div class="card text-white bg-dark mb-3">
+				<div class="card-header">
+					<h2><%= params[:title] %></h2>
 				</div>
-			<% end %>
-		</div>			
+				<div class="card-body">
+					<p class="card-text">
+						<p><%= params[:body] %></p>
+					</p>
+				</div>
+			</div>
 		</main>
+
 	</body>
 </html>
